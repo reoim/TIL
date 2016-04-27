@@ -1,0 +1,11 @@
+#content {
+	text-align: center;
+	padding-top: 25%;
+	font-family: 'Open Sans', sans-serif;}
+
+body {
+	background: url(https://images.unsplash.com/photo-1428189923803-e9801d464d76?crop=entropy&fit=crop&fm=jpg&h=1325&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1250);
+	background-size: cover;
+	/*background-position: center;*/
+	background-repeat: no-repeat;
+}
