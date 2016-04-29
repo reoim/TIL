@@ -29,6 +29,7 @@ p1Button.addEventListener("click", function(){
 
 		if(p1Score === winningScore){
 			gameOver = true;
+			p1Display.style.color = "green";
 		}
 
 		p1Display.textContent = p1Score;
@@ -46,6 +47,7 @@ p2Button.addEventListener("click", function(){
 		
 		if(p2Score === winningScore){
 			gameOver = true;
+			p2Display.style.color = "green";
 		}
 
 		p2Display.textContent = p2Score;
@@ -55,24 +57,26 @@ p2Button.addEventListener("click", function(){
 })
 
 
-
-
-resetButton.addEventListener("click", function(){
+function reset(){
 
 	p1Score = 0;
 	p2Score = 0;
-
-	p1Display.textContent = p1Score;
-	p2Display.textContent = p2Score;
-
+	p1Display.textContent = 0;
+	p2Display.textContent = 0;
 	gameOver = false;
+}
 
+resetButton.addEventListener("click", function(){
+
+	reset();
 
 })
 
 
 inputScore.addEventListener("change", function(){
 
+
+	reset();
 	winningScore = Number(inputScore.value); 
 	//inputScore.value returns string value. So use Number(inputScore.value) to get number value.
 	winningScoreDisplay.textContent = winningScore;
