@@ -1,5 +1,6 @@
 .done {
-	text-decoration: line-through;
-	opacity: 0.5;
+	text-decoration: line-through; /* 글자 가운데 줄긋기 */
+	opacity: 0.5; /* 불투명 지수 */ 
+
 
 }
