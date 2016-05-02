@@ -1,10 +1,10 @@
 var colors = [
-	"rgb(255,0,0)",
-	"rgb(255,255,0)",
-	"rgb(0,255,0)",
-	"rgb(0,255,255)",
-	"rgb(0,0,255)",
-	"rgb(255,0,255)"
+	"rgb(255, 0,0 )",
+	"rgb(255, 255, 0)",
+	"rgb(0, 255, 0)",
+	"rgb(0, 255, 255)",
+	"rgb(0, 0, 255)",
+	"rgb(255, 0, 255)"
 ]
 
 var squares = document.querySelectorAll(".square");
@@ -21,9 +21,12 @@ for(i = 0; i < squares.length; i++){
 
 
 		if (pickedColor === clickedColor){
-		alert("correct"); //doesn't work, need to be fixed.
+		alert("correct"); 
+		//Why alert("correct") never work?
+		//rgb(x,x,x) != rgb(x, x, x) space matter. need to be completely same. 
 		} else {
 		alert("try again");
+		
 		}
 
 	});
