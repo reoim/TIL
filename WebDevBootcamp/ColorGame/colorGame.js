@@ -8,11 +8,12 @@ var colors = [
 ]
 
 var squares = document.querySelectorAll(".square");
-var pickedColor = colors[3];
+var pickedColor = pickColor();
 var colorDisplay = document.getElementById("colorDisplay");
+var resultDisplay = document.getElementById("result");
 colorDisplay.textContent = pickedColor;
 
-for(i = 0; i < squares.length; i++){
+for(var i = 0; i < squares.length; i++){
 	squares[i].style.background = colors[i];
 
 	squares[i].addEventListener("click", function(){
@@ -21,11 +22,16 @@ for(i = 0; i < squares.length; i++){
 
 
 		if (pickedColor === clickedColor){
-		alert("correct"); 
-		//Why alert("correct") never work?
+		//Why (pickedColor === clickedColor) doesn't work?
 		//rgb(x,x,x) != rgb(x, x, x) space matter. need to be completely same. 
+
+		resultDisplay.textContent = "Correct!";
+		correctColor();
+
+
 		} else {
-		alert("try again");
+		this.style.background = "#232323";
+		resultDisplay.textContent = "Try again!";
 		
 		}
 
@@ -33,4 +39,21 @@ for(i = 0; i < squares.length; i++){
 	
 }
 
+
+function correctColor(){
+	for(var i = 0; i < squares.length; i++){
+		squares[i].style.background = pickedColor;
+		//set all suqares background color as picked color
+	}
+};
+
+
+function pickColor(){
+	var random = Math.floor(Math.random()*squares.length);
+	//return random number 0 ~ 5
+	//Math.floor, cut off all decimal value.
+	//Math.random, return randome value between 0 and 1 (ex, 0.133563522)
+	return colors[random];
+
+}
 
