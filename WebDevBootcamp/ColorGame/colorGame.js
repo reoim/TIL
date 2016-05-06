@@ -1,16 +1,10 @@
-var colors = [
-	"rgb(255, 0,0 )",
-	"rgb(255, 255, 0)",
-	"rgb(0, 255, 0)",
-	"rgb(0, 255, 255)",
-	"rgb(0, 0, 255)",
-	"rgb(255, 0, 255)"
-]
+var colors = generateColors(6);
 
 var squares = document.querySelectorAll(".square");
 var pickedColor = pickColor();
 var colorDisplay = document.getElementById("colorDisplay");
 var resultDisplay = document.getElementById("result");
+var h1 = document.querySelector("h1");
 colorDisplay.textContent = pickedColor;
 
 for(var i = 0; i < squares.length; i++){
@@ -44,6 +38,7 @@ function correctColor(){
 	for(var i = 0; i < squares.length; i++){
 		squares[i].style.background = pickedColor;
 		//set all suqares background color as picked color
+		h1.style.background = pickedColor;
 	}
 };
 
@@ -57,3 +52,27 @@ function pickColor(){
 
 }
 
+function generateColors(num){
+	//make array
+	var colorArr = [];
+	//push random color to array
+	for(var i = 0; i < num; i++){
+
+		colorArr.push(randomColors());
+	}
+	//return array
+	return colorArr;
+}
+
+function randomColors(){
+	//red 0 ~ 255
+	var r = Math.floor(Math.random()*256);
+	//green 0 ~ 255
+	var g = Math.floor(Math.random()*256);
+	//blue 0 ~ 255
+	var b = Math.floor(Math.random()*256);
+
+
+	"rgb(r, g, b)"
+	return "rgb(" + r + ", " + g + ", " + b + ")";
+}
