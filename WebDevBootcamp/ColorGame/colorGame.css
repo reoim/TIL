@@ -1,5 +1,8 @@
 body {
 	background-color: #232323;
+	margin: 0;
+	font-family: "Monsterrat", "Avenir";
+
 }
 
 
@@ -10,18 +13,75 @@ body {
 	padding-bottom: 30%;
 	float: left;
 	margin: 1.66%;
+	border-radius: 15%;
+
+	transition: background 0.4s;
+	/* transition property won't working on every browser. To support all browser, need next 2 line. */
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
 }
 
 #container {
 	max-width: 600px;
-	margin: 0 auto;
+	margin: 20px auto;
 }
 
 
 h1 {
+	padding: 20px 0;
+	line-height: 1.1;
+	text-align: center;
 	color: white;
+	margin: 0;
+	background: steelblue;
+	font-weight: normal;
+	text-transform: uppercase;
 }
 
-#result {
+#colorDisplay {
+	font-size: 200%
+}
+
+#menuBar {
+	background: white;
+	text-align: center;
+
+}
+
+
+.selected {
 	color: white;
+	background: steelblue;
+}
+
+button {
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	margin: 0;
+	/*line-height: 100%;*/
+	font-weight: 700;
+	color: steelblue;
+	letter-spacing: 1px;
+	font-size: inherit;
+	transition: all 0.3s;
+	/* transition property won't working on every browser. To support all browser, need next 2 line. */
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+
+	outline: none;
+
+}
+
+
+button:hover {
+	color: white;
+	background: steelblue;
+}
+
+
+#result {
+	/* Give space to span */
+	display: inline-block;
+	width: 20%
 }
