@@ -1,4 +1,4 @@
-//Select all divs and give them a purple backgorund
+ //Select all divs and give them a purple backgorund
 $("div").css("background", "purple");
 //Select the divs with calss "highlight" and make them 200px wide
 $(".highlight").css("width", "200px");
