@@ -1,6 +1,6 @@
 # EJS
 
-### In order to rander ejs file, ejs file need to be located under views folder.
+### In order to render ejs file, ejs file need to be located under views folder.
 ex> project/view/home.ejs
 <br>
 
