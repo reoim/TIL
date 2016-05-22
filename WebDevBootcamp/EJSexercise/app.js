@@ -1,8 +1,17 @@
 var express = require("express");
 var app = express();
 
+//express serve files in public folder
+app.use(express.static("public"));
+
+//consider render file as ejs file
+app.set("view engine", "ejs");
+
 app.get("/", function(req, res){
-  res.render("home.ejs");
+  res.render("home");
+  //it's same as res.render("home.ejs")
+  //because of code above
+  //  app.set("view engine", "ejs");
 
 });
 
@@ -10,7 +19,7 @@ app.get("/", function(req, res){
 app.get("/fallinlovewith/:thing", function(req, res){
   var thing = req.params.thing;
 
-  res.render("love.ejs", {thingVar: thing});
+  res.render("love", {thingVar: thing});
   //thingVar in love.ejs is equal to thing
 });
 
@@ -31,7 +40,7 @@ app.get("/posts", function(req, res){
     }
   ];
 
-  res.render("posts.ejs", {posts : posts});
+  res.render("posts", {posts : posts});
 
 });
 
