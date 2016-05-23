@@ -1,7 +1,12 @@
 var express = require("express");
 var app = express();
+var bodyParser = require("body-parser");
+
+app.use(bodyParser.urlencoded({extended: true}));
 
 app.set("view engine", "ejs");
+
+var friends = ["Tony", "Hailey", "Justin", "Ken"];
 
 app.get("/", function(req, res){
   res.render("home");
@@ -10,13 +15,15 @@ app.get("/", function(req, res){
 
 app.get("/friends", function(req, res){
 
-  var friends = ["Tony", "Hailey", "Justin", "Ken"];
+
   res.render("friends", {friends: friends});
 
 });
 
 app.post("/addfriend", function(req, res){
-  res.send("You have reached the post method");
+  var newBuddy = req.body.newFriend;
+  friends.push(newBuddy);
+  res.redirect("friends");
 });
 
 
