@@ -1,5 +1,5 @@
 # Simple movie search app with Express.js
-This simple moive search app is for API exercise. 
+This simple moive search app is for API exercise.
 Tutorial provided by [Udemy - The web developer bootcamp](https://www.udemy.com/the-web-developer-bootcamp)
 ## Today I Learned through this exercise
 ### [req.body](http://expressjs.com/en/4x/api.html#req.body)
@@ -56,4 +56,15 @@ req.params.name
 // => "tj"
 ```
 
+### [Request](https://www.npmjs.com/package/request)
+> 간단하게 http call 을 만들수 있는 패키지.
 
+예시코드 (출처: https://www.npmjs.com/package/request)
+```
+var request = require('request');
+request('http://www.google.com', function (error, response, body) {
+  if (!error && response.statusCode == 200) {
+    console.log(body) // Show the HTML for the Google homepage.
+  }
+})
+```
