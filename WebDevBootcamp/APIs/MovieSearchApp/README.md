@@ -5,7 +5,7 @@
 > 초기상태는 undefined.<br>
 [body-parser](https://www.npmjs.com/package/body-parser) 나 [multer](https://www.npmjs.com/package/multer) 같은 body-parsing middleware를 사용하여 값을 받을 수 있음. <br>
 
-예시코드
+예시코드 (출처: http://expressjs.com)
 ```
 var app = require('express')();
 var bodyParser = require('body-parser');
@@ -27,7 +27,7 @@ app.post('/profile', upload.array(), function (req, res, next) {
 > query string 의 변수값을 포함한 오브젝트.<br>
 query string 이 없으면 빈 오브젝트를 반환 {}
 
-예시코드
+예시코드 (출처: http://expressjs.com)
 ```
 // GET /search?q=tobi+ferret
 req.query.q
@@ -44,4 +44,15 @@ req.query.shoe.type
 // => "converse"
 ```
 
-### req.params
+### [req.params](http://expressjs.com/en/4x/api.html#req.params)
+> route 이름 변수를 포함한 오브젝트.<br>
+예를들어, route 가 /user/:name 일 경우 name 값은 req.params.name
+
+예시코드 (출처: http://expressjs.com)
+```
+// GET /user/tj
+req.params.name
+// => "tj"
+```
+
+
