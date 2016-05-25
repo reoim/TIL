@@ -23,7 +23,7 @@ app.post('/profile', upload.array(), function (req, res, next) {
 
 
 
-### req.query
+### [req.query](http://expressjs.com/en/4x/api.html#req.query)
 > query string 의 변수값을 포함한 오브젝트.<br>
 query string 이 없으면 빈 오브젝트를 반환 {}
 
