@@ -1,5 +1,6 @@
 # Simple movie search app with Express.js
-
+This simple moive search app is for API exercise. 
+Tutorial provided by [Udemy - The web developer bootcamp](https://www.udemy.com/the-web-developer-bootcamp)
 ## Today I Learned through this exercise
 ### [req.body](http://expressjs.com/en/4x/api.html#req.body)
 > 초기상태는 undefined.<br>
