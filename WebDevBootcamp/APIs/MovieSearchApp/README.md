@@ -1,6 +1,6 @@
 # Simple movie search app with Express.js
 
-## Today I Learned
+## Today I Learned through this exercise
 ### [req.body](http://expressjs.com/en/4x/api.html#req.body)
 > 초기상태는 undefined.<br>
 [body-parser](https://www.npmjs.com/package/body-parser) 나 [multer](https://www.npmjs.com/package/multer) 같은 body-parsing middleware를 사용하여 값을 받을 수 있음. <br>
