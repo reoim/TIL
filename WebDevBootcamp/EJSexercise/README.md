@@ -6,7 +6,7 @@ ex> project/view/home.ejs
 
 ### Difference between <%= %> and <% %>
 * JavaScript between <% %> is executed.
-* JavaScript between <$= $> adds HTML to the result
+* JavaScript between <%= %> adds HTML to the result
 <br>
 
 ### How to get data from route path
