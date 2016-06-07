@@ -1,5 +1,6 @@
 # Today I Learned
-Daily commit of What I learned today.
+Daily commit of What I learned today.<br>
+Influenced by [Today I Learned](https://github.com/thoughtbot/til)
 
 ##List
 [Restful](https://github.com/reoim/TIL/blob/master/WebDevBootcamp/restful_7route.md)<br>
