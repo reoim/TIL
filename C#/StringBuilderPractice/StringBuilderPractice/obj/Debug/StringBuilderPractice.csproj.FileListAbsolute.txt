@@ -1,0 +1,6 @@
+C:\Users\Reo\Documents\GitHub\TIL\C#\StringBuilderPractice\StringBuilderPractice\bin\Debug\StringBuilderPractice.exe.config
+C:\Users\Reo\Documents\GitHub\TIL\C#\StringBuilderPractice\StringBuilderPractice\bin\Debug\StringBuilderPractice.exe
+C:\Users\Reo\Documents\GitHub\TIL\C#\StringBuilderPractice\StringBuilderPractice\bin\Debug\StringBuilderPractice.pdb
+C:\Users\Reo\Documents\GitHub\TIL\C#\StringBuilderPractice\StringBuilderPractice\obj\Debug\StringBuilderPractice.csprojResolveAssemblyReference.cache
+C:\Users\Reo\Documents\GitHub\TIL\C#\StringBuilderPractice\StringBuilderPractice\obj\Debug\StringBuilderPractice.exe
+C:\Users\Reo\Documents\GitHub\TIL\C#\StringBuilderPractice\StringBuilderPractice\obj\Debug\StringBuilderPractice.pdb

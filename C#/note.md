@@ -4,7 +4,8 @@
 > For a signed integer one bit is used to indicate the sign - 1 for negative, zero for positive. Thus a 16 bit signed integer only has 15 bits for data whereas a 16 bit unsigned integer has all 16 bits available. This means unsigned integers can have a value twice as high as signed integers (but only positive values).
 
 
-## String
+# String
+** String is immutable **
 ### Formatting
 ```
 ToLower()
@@ -56,3 +57,23 @@ string t = i.ToString("C0");  // "$1,234"
 |**e** or **E**| Exponential | 1052.0329112756(E) -> 1.052033E + 003|
 |**f** or **F**| Fixed Point | 1234.567(F1) -> 1234.5|
 |**x** or **X**| Hexadecimal | 255(X) -> FF|
+
+
+# StringBuilder
+- Defiend in System.Text
+- A mutable string
+- Easy and fast to create and manipulate strings
+
+> ** Searching 기능 사용불가 **
+> - IndexOf()
+> - LastIndexOf()
+> - Contains()
+> - StartsWith()
+> - ... 요것들은  String 만 사용가능<br>
+
+> ** 대신  String Manipulation Methods  사용가능 **
+> - Append()
+> - Insert()
+> - Remove()
+> - Replace()
+> - Clear()
