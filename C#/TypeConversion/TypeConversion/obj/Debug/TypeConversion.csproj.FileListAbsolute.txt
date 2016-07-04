@@ -1,0 +1,5 @@
+c:\users\reo\documents\visual studio 2015\Projects\TypeConversion\TypeConversion\bin\Debug\TypeConversion.exe.config
+c:\users\reo\documents\visual studio 2015\Projects\TypeConversion\TypeConversion\bin\Debug\TypeConversion.exe
+c:\users\reo\documents\visual studio 2015\Projects\TypeConversion\TypeConversion\bin\Debug\TypeConversion.pdb
+c:\users\reo\documents\visual studio 2015\Projects\TypeConversion\TypeConversion\obj\Debug\TypeConversion.exe
+c:\users\reo\documents\visual studio 2015\Projects\TypeConversion\TypeConversion\obj\Debug\TypeConversion.pdb

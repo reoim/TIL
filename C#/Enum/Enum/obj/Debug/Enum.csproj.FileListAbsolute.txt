@@ -1,0 +1,6 @@
+c:\users\reo\documents\visual studio 2015\Projects\Enum\Enum\bin\Debug\Enum.exe.config
+c:\users\reo\documents\visual studio 2015\Projects\Enum\Enum\bin\Debug\Enum.exe
+c:\users\reo\documents\visual studio 2015\Projects\Enum\Enum\bin\Debug\Enum.pdb
+c:\users\reo\documents\visual studio 2015\Projects\Enum\Enum\obj\Debug\Enum.csprojResolveAssemblyReference.cache
+c:\users\reo\documents\visual studio 2015\Projects\Enum\Enum\obj\Debug\Enum.exe
+c:\users\reo\documents\visual studio 2015\Projects\Enum\Enum\obj\Debug\Enum.pdb

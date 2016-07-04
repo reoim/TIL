@@ -1,0 +1,6 @@
+c:\users\reo\documents\visual studio 2015\Projects\CSahrpFundamentals\CSahrpFundamentals\bin\Debug\CSahrpFundamentals.exe.config
+c:\users\reo\documents\visual studio 2015\Projects\CSahrpFundamentals\CSahrpFundamentals\bin\Debug\CSahrpFundamentals.exe
+c:\users\reo\documents\visual studio 2015\Projects\CSahrpFundamentals\CSahrpFundamentals\bin\Debug\CSahrpFundamentals.pdb
+c:\users\reo\documents\visual studio 2015\Projects\CSahrpFundamentals\CSahrpFundamentals\obj\Debug\CSahrpFundamentals.csprojResolveAssemblyReference.cache
+c:\users\reo\documents\visual studio 2015\Projects\CSahrpFundamentals\CSahrpFundamentals\obj\Debug\CSahrpFundamentals.exe
+c:\users\reo\documents\visual studio 2015\Projects\CSahrpFundamentals\CSahrpFundamentals\obj\Debug\CSahrpFundamentals.pdb

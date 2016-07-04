@@ -1,0 +1,6 @@
+c:\users\reo\documents\visual studio 2015\Projects\SummarisingText\SummarisingText\bin\Debug\SummarisingText.exe.config
+c:\users\reo\documents\visual studio 2015\Projects\SummarisingText\SummarisingText\bin\Debug\SummarisingText.exe
+c:\users\reo\documents\visual studio 2015\Projects\SummarisingText\SummarisingText\bin\Debug\SummarisingText.pdb
+c:\users\reo\documents\visual studio 2015\Projects\SummarisingText\SummarisingText\obj\Debug\SummarisingText.csprojResolveAssemblyReference.cache
+c:\users\reo\documents\visual studio 2015\Projects\SummarisingText\SummarisingText\obj\Debug\SummarisingText.exe
+c:\users\reo\documents\visual studio 2015\Projects\SummarisingText\SummarisingText\obj\Debug\SummarisingText.pdb

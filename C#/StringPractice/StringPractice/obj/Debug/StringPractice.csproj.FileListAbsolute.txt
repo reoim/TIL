@@ -1,0 +1,6 @@
+c:\users\reo\documents\visual studio 2015\Projects\StringPractice\StringPractice\bin\Debug\StringPractice.exe.config
+c:\users\reo\documents\visual studio 2015\Projects\StringPractice\StringPractice\bin\Debug\StringPractice.exe
+c:\users\reo\documents\visual studio 2015\Projects\StringPractice\StringPractice\bin\Debug\StringPractice.pdb
+c:\users\reo\documents\visual studio 2015\Projects\StringPractice\StringPractice\obj\Debug\StringPractice.csprojResolveAssemblyReference.cache
+c:\users\reo\documents\visual studio 2015\Projects\StringPractice\StringPractice\obj\Debug\StringPractice.exe
+c:\users\reo\documents\visual studio 2015\Projects\StringPractice\StringPractice\obj\Debug\StringPractice.pdb

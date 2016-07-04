@@ -1,0 +1,6 @@
+c:\users\reo\documents\visual studio 2015\Projects\Arrays\Arrays\bin\Debug\Arrays.exe.config
+c:\users\reo\documents\visual studio 2015\Projects\Arrays\Arrays\bin\Debug\Arrays.exe
+c:\users\reo\documents\visual studio 2015\Projects\Arrays\Arrays\bin\Debug\Arrays.pdb
+c:\users\reo\documents\visual studio 2015\Projects\Arrays\Arrays\obj\Debug\Arrays.csprojResolveAssemblyReference.cache
+c:\users\reo\documents\visual studio 2015\Projects\Arrays\Arrays\obj\Debug\Arrays.exe
+c:\users\reo\documents\visual studio 2015\Projects\Arrays\Arrays\obj\Debug\Arrays.pdb

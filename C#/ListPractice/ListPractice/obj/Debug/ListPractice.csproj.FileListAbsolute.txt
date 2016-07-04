@@ -1,0 +1,6 @@
+c:\users\reo\documents\visual studio 2015\Projects\ListPractice\ListPractice\bin\Debug\ListPractice.exe.config
+c:\users\reo\documents\visual studio 2015\Projects\ListPractice\ListPractice\bin\Debug\ListPractice.exe
+c:\users\reo\documents\visual studio 2015\Projects\ListPractice\ListPractice\bin\Debug\ListPractice.pdb
+c:\users\reo\documents\visual studio 2015\Projects\ListPractice\ListPractice\obj\Debug\ListPractice.csprojResolveAssemblyReference.cache
+c:\users\reo\documents\visual studio 2015\Projects\ListPractice\ListPractice\obj\Debug\ListPractice.exe
+c:\users\reo\documents\visual studio 2015\Projects\ListPractice\ListPractice\obj\Debug\ListPractice.pdb

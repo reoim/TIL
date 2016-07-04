@@ -1,0 +1,6 @@
+c:\users\reo\documents\visual studio 2015\Projects\ReferenceTypeAndValueType\ReferenceTypeAndValueType\bin\Debug\ReferenceTypeAndValueType.exe.config
+c:\users\reo\documents\visual studio 2015\Projects\ReferenceTypeAndValueType\ReferenceTypeAndValueType\bin\Debug\ReferenceTypeAndValueType.exe
+c:\users\reo\documents\visual studio 2015\Projects\ReferenceTypeAndValueType\ReferenceTypeAndValueType\bin\Debug\ReferenceTypeAndValueType.pdb
+c:\users\reo\documents\visual studio 2015\Projects\ReferenceTypeAndValueType\ReferenceTypeAndValueType\obj\Debug\ReferenceTypeAndValueType.csprojResolveAssemblyReference.cache
+c:\users\reo\documents\visual studio 2015\Projects\ReferenceTypeAndValueType\ReferenceTypeAndValueType\obj\Debug\ReferenceTypeAndValueType.exe
+c:\users\reo\documents\visual studio 2015\Projects\ReferenceTypeAndValueType\ReferenceTypeAndValueType\obj\Debug\ReferenceTypeAndValueType.pdb

@@ -1,0 +1,6 @@
+c:\users\reo\documents\visual studio 2015\Projects\ArrayPractice\ArrayPractice\bin\Debug\ArrayPractice.exe.config
+c:\users\reo\documents\visual studio 2015\Projects\ArrayPractice\ArrayPractice\bin\Debug\ArrayPractice.exe
+c:\users\reo\documents\visual studio 2015\Projects\ArrayPractice\ArrayPractice\bin\Debug\ArrayPractice.pdb
+c:\users\reo\documents\visual studio 2015\Projects\ArrayPractice\ArrayPractice\obj\Debug\ArrayPractice.csprojResolveAssemblyReference.cache
+c:\users\reo\documents\visual studio 2015\Projects\ArrayPractice\ArrayPractice\obj\Debug\ArrayPractice.exe
+c:\users\reo\documents\visual studio 2015\Projects\ArrayPractice\ArrayPractice\obj\Debug\ArrayPractice.pdb

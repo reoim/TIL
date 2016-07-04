@@ -1,0 +1,6 @@
+c:\users\reo\documents\visual studio 2015\Projects\Conditionals\Conditionals\bin\Debug\Conditionals.exe.config
+c:\users\reo\documents\visual studio 2015\Projects\Conditionals\Conditionals\bin\Debug\Conditionals.exe
+c:\users\reo\documents\visual studio 2015\Projects\Conditionals\Conditionals\bin\Debug\Conditionals.pdb
+c:\users\reo\documents\visual studio 2015\Projects\Conditionals\Conditionals\obj\Debug\Conditionals.csprojResolveAssemblyReference.cache
+c:\users\reo\documents\visual studio 2015\Projects\Conditionals\Conditionals\obj\Debug\Conditionals.exe
+c:\users\reo\documents\visual studio 2015\Projects\Conditionals\Conditionals\obj\Debug\Conditionals.pdb
