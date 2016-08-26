@@ -1,4 +1,4 @@
-Memo from [Mosh Hamedani](https://www.programmingwithmosh.com)
+Memo from [Mosh Hamedani](http://programmingwithmosh.com/)
 
 
 
