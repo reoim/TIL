@@ -13,3 +13,26 @@ SELECT
 	WHERE (condition..)
 	
 ```
+
+
+## Subquery returned more than 1 value
+This is not permitted when the subquery follows =, !=, <, <= , >, >= or when the subquery is used as an expression. 
+
+e.g> Following SQL query doesn't work
+```
+INSERT INTO table(ID, column1, column2)
+SELECT
+	NEWID(),
+	(SELECT column3
+	FROM otherTable
+	WHERE column3 = 'value'), 'test'
+```
+Because the subquery returns multiple values and it try to insert multiple value into 1 row. The query should be changed like this. 
+
+```
+INSERT INTO table(ID, column1, column2)
+SELECT NEWID(),column3, 'test'
+FROM otherTable
+WHERE column3 = 'value'
+```
+In this case, I can insert multiple value from subquery with new unique ID and 'test' value to column2.
