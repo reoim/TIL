@@ -36,3 +36,31 @@ FROM otherTable
 WHERE column3 = 'value'
 ```
 In this case, I can insert multiple value from subquery with new unique ID and 'test' value to column2.
+
+
+
+## SELECT DISTINCT comparability
+**SELECT DISTINCT statement** is to return only different value when there are duplicated values in a column.
+```
+SELECT DISTINCT column_name,column_name
+FROM table_name;
+```
+**Comparability error**
+
+**Text / nText / image** data type cannot be selected as **DISTINCT** because it is not comparable.
+```
+SELECT DISTINCT CAST(Description as TEXT)
+FROM PRODUCTS
+```
+Cannot cast Description column as text when use **DISTINCT**.
+
+It will get following error message.
+```
+Msg 421, Level 16, State 1, Line 1
+The text data type cannot be selected as DISTINCT because it is not comparable.
+```
+Use varchar(max) instead of text.
+```
+SELECT DISTINCT CAST(Description as varchar(50))
+FROM PRODUCTS
+```
