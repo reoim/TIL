@@ -8,7 +8,7 @@
 	?>
 	```
 
-	For detailed report,
+	For detailed report, (can check **memory limit** as well)
 	```
 	<?php
 	phpinfo();
