@@ -10,6 +10,7 @@ Firefox 에드온 중 FireFTP 사용.
 ## ERROR 508 - Resource limit is reached
 Our server was downed today because of infinitive loop that I caused :(
 
+**What is 508 error?**
 
 Website is hitting one or more of the hosting account’s virtual resource limits: CPU Usage, RAM Usage, I/O usage or Entry Processes.
 
