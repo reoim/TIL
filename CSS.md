@@ -18,3 +18,6 @@ However,
 JavaScript depends on there being only one page element with any particular id, or else the commonly used getElementById function couldn't be depended on.
 
 
+
+##Parallax
+
