@@ -21,3 +21,4 @@ JavaScript depends on there being only one page element with any particular id, 
 
 ##Parallax
 
+[Tutorial link](http://www.w3schools.com/howto/howto_css_parallax.asp)
