@@ -80,3 +80,36 @@ SELECT CAST(column1 as varchar(50)) as columnName
 FROM table1
 ```
 
+----
+
+## Return row number for each row
+
+Example code
+```
+USE AdventureWorks2012;   
+GO  
+SELECT ROW_NUMBER() OVER(ORDER BY SalesYTD DESC) AS Row,   
+    FirstName, LastName, ROUND(SalesYTD,2,1) AS "Sales YTD"   
+FROM Sales.vSalesPerson  
+WHERE TerritoryName IS NOT NULL AND SalesYTD <> 0;  
+```
+
+Result
+```
+Row FirstName    LastName               SalesYTD  
+--- -----------  ---------------------- -----------------  
+1   Linda        Mitchell               4251368.54  
+2   Jae          Pak                    4116871.22  
+3   Michael      Blythe                 3763178.17  
+4   Jillian      Carson                 3189418.36  
+5   Ranjit       Varkey Chudukatil      3121616.32  
+6   José         Saraiva                2604540.71  
+7   Shu          Ito                    2458535.61  
+8   Tsvi         Reiter                 2315185.61  
+9   Rachel       Valdez                 1827066.71  
+10  Tete         Mensa-Annan            1576562.19  
+11  David        Campbell               1573012.93  
+12  Garrett      Vargas                 1453719.46  
+13  Lynn         Tsoflias               1421810.92  
+14  Pamela       Ansman-Wolfe           1352577.13  
+```
