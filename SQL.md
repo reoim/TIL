@@ -113,3 +113,29 @@ Row FirstName    LastName               SalesYTD
 13  Lynn         Tsoflias               1421810.92  
 14  Pamela       Ansman-Wolfe           1352577.13  
 ```
+
+----
+
+## SELECT * does not work on mssql
+
+```
+select * from table //error
+
+select column1, column2 from table //works fine
+```
+It happens when MSSQL table has **TEXT** type column and blank string in it.
+
+#### How to solve the problem?
+* Change the datatype of that column to varchar 
+* Reset the value of the column from blank string to NULL
+* Select only necessary columns
+
+----
+
+## SELECT TEXT type with blank string
+Similar issue with above one. You can not select text type column with balnk string in it.
+
+In this case, Change data type or Cast it as varchar.
+```
+select CAST(column1 as varchar(50)) from table
+```
