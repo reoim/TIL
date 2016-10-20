@@ -18,7 +18,7 @@
 2. Upload the file to server using FTP client or server's admin control panel
 3. Open the file on web browser
 
-
+----
 
 
 ## Debug
@@ -30,4 +30,41 @@ Turn it on in the script like this:
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
+```
+
+
+----
+
+
+## Get value from select box without submit button
+Need to use ajax/jquery to get value from select box. 
+
+PHP page already loaded so need to reload page to pass variable to php $_GET['']
+
+ex>php
+```
+<?php
+	if (isset($_GET['limit'])) {
+		$limit = $_GET['limit'];
+	      } else {
+		$limit = 10; //default number of items per page
+	      }
+?>
+
+...
+...
+
+<select id="items">
+	<option value="" selected disabled>Show up to</option>
+	<option value="10">10 items</option>
+	<option value="25">25 items</option>
+	<option value="50">50 items</option>
+	<option value="100">100 items</option>
+</select>
+
+<script type="text/javascript">
+	$('#items').change(function(){
+	window.location = "(mydomain address)?limit="+ $(this).val();
+	});
+</script>
 ```
