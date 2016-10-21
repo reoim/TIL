@@ -88,3 +88,19 @@ $( document ).ready(function() {
     
 
 ```
+
+
+----
+## Prevent confirm form resubmission
+
+### Post-Redirect-Get (PRG)
+sample code
+```
+if ($_POST) {
+   // Execute code (such as database updates) here.
+
+   // Redirect to this page.
+   header("Location: " . $_SERVER['REQUEST_URI']);
+   exit();
+}
+```
