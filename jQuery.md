@@ -51,3 +51,27 @@ $("#formId")[0].reset()
 // or
 $("#formId").get(0).reset()
 ```
+
+----
+## Reset input field when modal is closed
+```
+<div class="modal ...>
+    
+    ...
+    
+    //close button
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+    </button>
+    
+    ...
+</div>
+
+// Reset form when close modal
+<script type="text/javascript">
+      $('.modal').on('hidden.bs.modal', function(){
+        $('.modal-custom-form').get(0).reset();
+      });
+    </script>
+
+```
