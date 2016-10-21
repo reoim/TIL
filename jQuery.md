@@ -72,6 +72,19 @@ $("#formId").get(0).reset()
       $('.modal').on('hidden.bs.modal', function(){
         $('.modal-custom-form').get(0).reset();
       });
-    </script>
+
+//or like this
+
+$( document ).ready(function() {
+    $('#modalId').on('hidden.bs.modal', function () {
+          $(this).removeData('bs.modal');
+    });
+});
+
+
+</script>
+    
+    
+    
 
 ```
