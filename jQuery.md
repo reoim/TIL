@@ -39,3 +39,15 @@ $('#allcb').change(function () {
     $('tbody tr td input[type="checkbox"]').prop('checked', $(this).prop('checked'));
 });
 ```
+
+----
+
+## Reset Form field
+jQuery doesn't have reset() method, but native javascript does. 
+
+Convert jQuery element to a javascript object like this;
+```
+$("#formId")[0].reset()
+// or
+$("#formId").get(0).reset()
+```
