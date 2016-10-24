@@ -102,7 +102,7 @@ In this case, the above code will be translated to:
 ```
 This code adds a script tag and an alert command. And when the page loads, the JavaScript code will be executed (the user will see an alert box). This is just a simple and harmless example how the PHP_SELF variable can be exploited.
 
-Be aware of that any JavaScript code can be added inside the <script> tag! A hacker can redirect the user to a file on another server, and that file can hold malicious code that can alter the global variables or submit the form to another address to save the user data, for example.
+Be aware of that any JavaScript code can be added inside the script tag! A hacker can redirect the user to a file on another server, and that file can hold malicious code that can alter the global variables or submit the form to another address to save the user data, for example.
 
 ### How To Avoid $_SERVER["PHP_SELF"] Exploits?
 $_SERVER["PHP_SELF"] exploits can be avoided by using the htmlspecialchars() function.
