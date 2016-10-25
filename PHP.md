@@ -2,7 +2,7 @@
 1. create version.php and save following code
 
 	For simple version check,
-	```
+	```php
 	<?php
 	echo 'Current PHP version: ' . phpversion();
 	?>
@@ -26,7 +26,7 @@
 Display errors could be turned off in **php.ini** or Apach config file.
 
 Turn it on in the script like this:
-```
+```php
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -45,7 +45,7 @@ Need to use ajax/jquery to get value from select box.
 PHP page already loaded so need to reload page to pass variable to php $_GET['']
 
 ex>php
-```
+```php
 <?php
 	if (isset($_GET['limit'])) {
 		$limit = $_GET['limit'];
@@ -55,7 +55,7 @@ ex>php
 ?>
 
 ...
-...
+...php
 
 <select id="items">
 	<option value="" selected disabled>Show up to</option>
@@ -116,3 +116,22 @@ The htmlspecialchars() function converts special characters to HTML entities. No
 <form method="post" action="test_form.php/&quot;&gt;&lt;script&gt;alert('hacked')&lt;/script&gt;">
 ```
 The exploit attempt fails, and no harm is done!!
+
+
+
+----
+
+----
+## Prevent confirm form resubmission
+
+### Post-Redirect-Get (PRG)
+sample code
+```php
+if ($_POST) {
+   // Execute code (such as database updates) here.
+
+   // Redirect to this page.
+   header("Location: " . $_SERVER['REQUEST_URI']);
+   exit();
+}
+```
