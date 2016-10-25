@@ -121,7 +121,7 @@ The exploit attempt fails, and no harm is done!!
 
 ----
 
-----
+
 ## Prevent confirm form resubmission
 
 ### Post-Redirect-Get (PRG)
