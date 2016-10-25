@@ -115,4 +115,4 @@ The htmlspecialchars() function converts special characters to HTML entities. No
 ```
 <form method="post" action="test_form.php/&quot;&gt;&lt;script&gt;alert('hacked')&lt;/script&gt;">
 ```
-The exploit attempt fails, and no harm is done!
+The exploit attempt fails, and no harm is done!!
