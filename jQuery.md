@@ -1,6 +1,6 @@
 ##Check and uncheck all checkbox
 html
-```
+```html
 <table border="1">
     <thead>
         <tr>
@@ -34,7 +34,7 @@ html
 ```
 
 js
-```
+```javascript
 $('#allcb').change(function () {
     $('tbody tr td input[type="checkbox"]').prop('checked', $(this).prop('checked'));
 });
@@ -46,7 +46,7 @@ $('#allcb').change(function () {
 jQuery doesn't have reset() method, but native javascript does. 
 
 Convert jQuery element to a javascript object like this;
-```
+```javascript
 $("#formId")[0].reset()
 // or
 $("#formId").get(0).reset()
@@ -54,7 +54,7 @@ $("#formId").get(0).reset()
 
 ----
 ## Reset input field when modal is closed
-```
+```javascript
 <div class="modal ...>
     
     ...
@@ -95,7 +95,7 @@ $( document ).ready(function() {
 
 ### Post-Redirect-Get (PRG)
 sample code
-```
+```php
 if ($_POST) {
    // Execute code (such as database updates) here.
 
@@ -108,7 +108,7 @@ if ($_POST) {
 ----
 
 ## Getting all table cells' value
-```
+```javascript
 var $row = $(this).closest("tr"),       // Finds the closest row <tr> 
     $tds = $row.find("td");             // Finds all children <td> elements
 
