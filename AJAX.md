@@ -2,7 +2,7 @@
 
 Using jQuery and AJAX to delete data can have better performance for client side. Because unlike PHP, it does not need to refreash all page.
 
-I can just send request and when the request success, just change remove a particular element on DOM.
+I can just send request and when the request success, just change or remove a particular element on DOM.
 ```javascript
  $(".someclass").click(function(){
    var del_id = $(this).attr('id');
