@@ -25,3 +25,16 @@ Similarly, hide submit button and use **label** with **for** attribute to submit
 
 <label for="submit-form">Submit</label>
 ```
+
+----
+
+## checkbox outside of form
+Checkbox also can use **form** attribute.
+```html
+<input type="checkbox" form="myForm">
+
+<form name="myForm" action="index.php" method="get">
+<input type="text">
+<button type="submit">submit</button>
+</form>
+```
