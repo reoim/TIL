@@ -34,7 +34,7 @@ Checkbox also can use **form** attribute.
 <input type="checkbox" form="myForm">
 
 <form name="myForm" action="index.php" method="get">
-<input type="text">
-<button type="submit">submit</button>
+    <input type="text">
+    <button type="submit">submit</button>
 </form>
 ```
