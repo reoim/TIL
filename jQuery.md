@@ -120,3 +120,7 @@ $('.myTerm').each(function(){
   subTerms = $(this).children();
 });
 ```
+or use **serializeArra()** if you want make object array
+```javascript
+var test = $('.ch_custom:checked').serializeArray();
+```
