@@ -103,3 +103,20 @@ $.each($tds, function() {               // Visits every single <td> element
     console.log($(this).text());        // Prints out the text within the <td>
 });
 ```
+
+----
+
+## put selected elements into array
+checkbox example
+```javascript
+chId=[];
+$('.ch_custom input:checked').each(function(){
+    chId.psuh($(this).attr('value'));
+});
+```
+other example
+```javascript
+$('.myTerm').each(function(){
+  subTerms = $(this).children();
+});
+```
