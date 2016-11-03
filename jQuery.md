@@ -109,9 +109,9 @@ $.each($tds, function() {               // Visits every single <td> element
 ## put selected elements into array
 checkbox example
 ```javascript
-chId=[];
-$('.ch_custom input:checked').each(function(){
-    chId.psuh($(this).attr('value'));
+var test = [];
+$('.ch_custom:checked').each(function(){
+    test.push($(this).val());
 });
 ```
 other example
