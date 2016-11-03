@@ -124,3 +124,31 @@ or use **serializeArra()** if you want make object array
 ```javascript
 var test = $('.ch_custom:checked').serializeArray();
 ```
+
+
+## Midpend?? append, prepend
+**prepend** attach tag before the selected element.
+
+**append** attach tag after the selected elemnt.
+
+What about **midpend????**
+
+Use **insertAfter()**
+```html
+<select id="mySelect">
+    <option class="target">1</option>
+    <option>3</option>
+</select>
+```
+useinsertAfter
+```javascript
+$('<option>2</option>')insertAfter('.target');
+```
+result
+```html
+<select id="mySelect">
+    <option class="target">1</option>
+    <option>2</option>
+    <option>3</option>
+</select>
+```
