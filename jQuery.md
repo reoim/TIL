@@ -140,7 +140,7 @@ Use **insertAfter()**
     <option>3</option>
 </select>
 ```
-useinsertAfter
+use insertAfter
 ```javascript
 $('<option>2</option>')insertAfter('.target');
 ```
