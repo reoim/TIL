@@ -160,7 +160,7 @@ To use jquery for dynamically elements that are added after event handler create
 
 ex>
 ```javascript
-$(".staticSelector").on('click', ".dynamicSelector", fn);
+$('#staticSelector').on('click', '#dynamicSelector', fn);
 ```
 
 The (now deprecated) .live() method worked by attaching all event handlers to the document object. 
@@ -170,6 +170,6 @@ Since the document object is an ancestor of every object in the document, they g
 So, in the example above, these two are equivalent:
 
 ```javascript
-$(document).on("click", ".dynamicSelector, fn);
-$(".dynamicSelector").live("click", fn);
+$(document).on('click', '#dynamicSelector', fn);
+$('#dynamicSelector').live('click', fn);
 ```
