@@ -42,6 +42,18 @@ $('#allcb').change(function () {
 
 ----
 
+## If checkbox is not checked
+
+```javascript
+$('#check').click(function() {
+    if(!$(this).is(':checked')) {
+        // Got unchecked, so something!!!
+    }
+});
+```
+
+----
+
 ## Reset Form field
 jQuery doesn't have reset() method, but native javascript does. 
 
