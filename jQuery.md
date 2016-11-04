@@ -152,3 +152,24 @@ result
     <option>3</option>
 </select>
 ```
+
+----
+
+## .on() for dynamically created elements
+To use jquery for dynamically elements that are added after event handler created. Need to use .on() properly.
+
+ex>
+```javascript
+$(".staticSelector").on('click', ".dynamicSelector", fn);
+```
+
+The (now deprecated) .live() method worked by attaching all event handlers to the document object. 
+
+Since the document object is an ancestor of every object in the document, they got delegated event handling that way. 
+
+So, in the example above, these two are equivalent:
+
+```javascript
+$(document).on("click", ".dynamicSelector, fn);
+$(".dynamicSelector").live("click", fn);
+```
