@@ -4,7 +4,7 @@ Subqueries are not allowed in (INSERT INTO ... VALUES...) context. Only scalar e
 In order to use subquery, use (INSERT INTO ... SELECT) instead.
 
 e.g>
-```
+```sql
 INSERT INTO tableName(ID, column1)
 SELECT
 	NEWID(),
@@ -19,7 +19,7 @@ SELECT
 This is not permitted when the subquery follows =, !=, <, <= , >, >= or when the subquery is used as an expression. 
 
 e.g> Following SQL query doesn't work
-```
+```sql
 INSERT INTO table(ID, column1, column2)
 SELECT
 	NEWID(),
@@ -29,7 +29,7 @@ SELECT
 ```
 Because the subquery returns multiple values and it try to insert multiple value into 1 row. The query should be changed like this. 
 
-```
+```sql
 INSERT INTO table(ID, column1, column2)
 SELECT NEWID(),column3, 'test'
 FROM otherTable
@@ -41,14 +41,14 @@ In this case, I can insert multiple value from subquery with new unique ID and '
 
 ## SELECT DISTINCT comparability
 **SELECT DISTINCT statement** is to return only different value when there are duplicated values in a column.
-```
+```sql
 SELECT DISTINCT column_name,column_name
 FROM table_name;
 ```
 **Comparability error**
 
 **Text / nText / image** data type cannot be selected as **DISTINCT** because it is not comparable.
-```
+```sql
 SELECT DISTINCT CAST(Description as TEXT)
 FROM PRODUCTS
 ```
@@ -60,7 +60,7 @@ Msg 421, Level 16, State 1, Line 1
 The text data type cannot be selected as DISTINCT because it is not comparable.
 ```
 Use varchar(max) instead of text.
-```
+```sql
 SELECT DISTINCT CAST(Description as varchar(50))
 FROM PRODUCTS
 ```
@@ -70,12 +70,12 @@ FROM PRODUCTS
 ## Put column name to CAST
 
 Following sql returns values without column name.
-```
+```sql
 SELECT CAST(column1 as varchar(50))
 FROM table1
 ```
 Add **'as columnName'** after **')'**
-```
+```sql
 SELECT CAST(column1 as varchar(50)) as columnName
 FROM table1
 ```
@@ -85,7 +85,7 @@ FROM table1
 ## Return row number for each row
 
 Example code
-```
+```sql
 USE AdventureWorks2012;   
 GO  
 SELECT ROW_NUMBER() OVER(ORDER BY SalesYTD DESC) AS Row,   
@@ -118,7 +118,7 @@ Row FirstName    LastName               SalesYTD
 
 ## SELECT * does not work on mssql
 
-```
+```sql
 select * from table //error
 
 select column1, column2 from table //works fine
@@ -136,6 +136,49 @@ It happens when MSSQL table has **TEXT** type column and blank string in it.
 Similar issue with above one. You can not select text type column with balnk string in it.
 
 In this case, Change data type or Cast it as varchar.
-```
+```sql
 select CAST(column1 as varchar(50)) from table
+```
+
+
+----
+
+## MySQL Limit clause in MS SQL server
+MySQL Limit is convenient and easy to use.
+```sql
+SELECT 
+    column1,column2,...
+FROM
+    table
+LIMIT offset , count;
+```
+
+MSSQL does not have Limit clause. But it can be achived by following query
+```sql
+WITH Results_CTE AS
+(
+    SELECT
+        Col1, Col2, ...,
+        ROW_NUMBER() OVER (ORDER BY SortCol1, SortCol2, ...) AS RowNum
+    FROM Table
+    WHERE <whatever>
+)
+SELECT *
+FROM Results_CTE
+WHERE RowNum >= @Offset
+AND RowNum < @Offset + @Limit
+```
+or you can use **BETWEEN** as well.
+```sql
+WITH Results_CTE AS
+(
+    SELECT
+        Col1, Col2, ...,
+        ROW_NUMBER() OVER (ORDER BY SortCol1, SortCol2, ...) AS RowNum
+    FROM Table
+    WHERE <whatever>
+)
+SELECT *
+FROM Results_CTE
+WHERE RowNum BETWEEN @Offset AND @Offset+@Limit
 ```
