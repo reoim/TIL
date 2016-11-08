@@ -26,7 +26,7 @@ $ cd /path/to/project
 $ compass watch
 ```
 
-[Compass tutorial](http://compass-style.org/help/tutorials/best_practices/)
+### [Compass tutorial](http://compass-style.org/help/tutorials/best_practices/)
 
 
 ----
