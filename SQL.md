@@ -11,8 +11,16 @@ SELECT
 	(SELECT TOP 1 columnName
 	FROM otherTable
 	WHERE (condition..)
+```
+You can also insert selected values
+```sql
+INSERT INTO table(ID, column1)
+SELECT NEWID(),col2
+FROM otherTable
+WHERE (condition)
 	
 ```
+
 ----
 
 ## Subquery returned more than 1 value
