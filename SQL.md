@@ -184,5 +184,5 @@ WHERE RowNum BETWEEN @Offset AND @Offset+@Limit
 ```
 Also you can use **NOT IN**.
 ```sql
-SELECT TOP @limit col1 FROM table not in (SELECT TOP @offset col1 FROM table)
+SELECT TOP @limit col1 FROM table WHERE primaryCol not in (SELECT TOP @offset primaryCol FROM table)
 ```
