@@ -185,3 +185,12 @@ So, in the example above, these two are equivalent:
 $(document).on('click', '#dynamicSelector', fn);
 $('#dynamicSelector').live('click', fn);
 ```
+
+----
+
+## Select only one checkbox
+```javascript
+$('input[type="checkbox"]').on('change', function() {
+   $('input[type="checkbox"]').not(this).prop('checked', false);
+});
+```
