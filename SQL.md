@@ -194,3 +194,41 @@ Also you can use **NOT IN**.
 ```sql
 SELECT TOP @limit col1 FROM table WHERE primaryCol not in (SELECT TOP @offset primaryCol FROM table)
 ```
+
+----
+
+## SELECT DISTINCT on a join based on only some column
+```sql
+SELECT DISTINCT user.userid, user.name, job.category
+FROM user
+INNER JOIN job
+ON user.userid = job.userid
+ORDER BY user.userid
+```
+Result will be
+```
+userid	name	category
+--	----	--------
+1 	reo	programmer
+1 	reo	web developer
+2 	hailey	java programmer
+```
+**But**, I want to get **DISTINCT** record based on **name** column, so result would be like this:
+```
+userid	name	category
+--	----	--------
+1 	reo	programmer
+2 	hailey	java programmer
+```
+Use substatement with **TOP** clause to get the result.
+```sql
+SELECT DISTINCT user.userid, user.name, job.category
+FROM user
+INNER JOIN job
+ON user.userid = job.userid
+WHERE job.jobid = (SELECT TOP 1 job.jobid
+      		   FROM job
+     		   WHERE user.userid = job.userid)
+ORDER BY user.userid
+```
+In this way, the nested query will short circuit on the first job found for each user.
