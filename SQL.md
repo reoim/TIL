@@ -208,17 +208,17 @@ ORDER BY user.userid
 Result will be
 ```
 userid	name	category
---	----	--------
-1 	reo	programmer
-1 	reo	web developer
-2 	hailey	java programmer
+------	-------	----------------
+1       reo     programmer
+1       reo     web developer
+2       hailey  java programmer
 ```
 **But**, I want to get **DISTINCT** record based on **name** column, so result would be like this:
 ```
-userid	name	category
---	----	--------
-1 	reo	programmer
-2 	hailey	java programmer
+userid  name    category
+------	-------	---------------
+1       reo     programmer
+2       hailey  java programmer
 ```
 Use substatement with **TOP** clause to get the result.
 ```sql
