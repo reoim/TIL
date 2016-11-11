@@ -232,3 +232,14 @@ WHERE job.jobid = (SELECT TOP 1 job.jobid
 ORDER BY user.userid
 ```
 In this way, the nested query will short circuit on the first job found for each user.
+
+
+## Select all records from one table that do not exist in another table
+[Original Solution Link](http://stackoverflow.com/questions/2686254/how-to-select-all-records-from-one-table-that-do-not-exist-in-another-table)
+```sql
+SELECT table1.name
+FROM table1
+LEFT JOIN table2 ON table2.name = table1.name
+WHERE table2.name IS NULL
+```
+Conceptually, we select all rows from table1 and for each row we attempt to find a row in table2 with the same value for the name column. If there is no such row, we just leave the table2 portion of our result empty for that row. Then we constrain our selection by picking only those rows in the result where the matching row does not exist. Finally, We ignore all fields from our result except for the name column (the one we are sure that exists, from table1).
