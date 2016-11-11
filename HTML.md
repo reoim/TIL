@@ -1,10 +1,4 @@
-## Center element
-```
-<center>
-```
 
-
-----
 
 ## Submit button outside of form
 Can use **form** attribute in HTML 5.
