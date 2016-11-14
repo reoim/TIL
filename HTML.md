@@ -32,3 +32,10 @@ Checkbox also can use **form** attribute.
     <button type="submit">submit</button>
 </form>
 ```
+
+----
+
+## href in button
+```html
+<button onclick="location.href='http://google.com';">Open Google</button>
+```
