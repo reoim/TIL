@@ -4,7 +4,7 @@ Using jQuery and AJAX to delete data can have better performance for client side
 
 I can just send request and when the request success, just change or remove a particular element on DOM.
 ```javascript
- $(".someclass").click(function(){
+$(".someclass").click(function(){
    var del_id = $(this).attr('id');
    var row = $(this).closest("tr"); //grab the row
 
@@ -21,4 +21,5 @@ I can just send request and when the request success, just change or remove a pa
                 }   
             }
     });
+});
 ```
