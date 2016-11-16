@@ -118,7 +118,12 @@ The htmlspecialchars() function converts special characters to HTML entities. No
 The exploit attempt fails, and no harm is done!!
 
 
-
+### clean user input to prevent sql injection
+```php
+$fname = trim($_POST['signup-Fname']);
+$fname = strip_tags($fname);
+$fname = htmlspecialchars($fname);
+```
 ----
 
 
