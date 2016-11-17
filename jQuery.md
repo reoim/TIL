@@ -66,7 +66,7 @@ $("#formId").get(0).reset()
 
 ----
 ## Reset input field when modal is closed
-```
+```javascript
 <div class="modal ...>
     
     ...
