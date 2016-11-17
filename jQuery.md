@@ -54,6 +54,19 @@ $('#check').click(function() {
 
 ----
 
+## Uncheck radio or checkbox
+```javascript
+$(this).prop('checked', false);
+// Note that the pre-jQuery 1.6 idiom was
+// $(this).attr('checked', false);
+```
+or plain js
+```javascript
+this.checked = false;
+```
+
+----
+
 ## Reset Form field
 jQuery doesn't have reset() method, but native javascript does. 
 
