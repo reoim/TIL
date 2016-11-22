@@ -8,7 +8,7 @@
 	?>
 	```
 
-	For detailed report, (can check **memory limit** as well)
+	For detailed report, (can check `memory limit` as well)
 	```
 	<?php
 	phpinfo();
@@ -23,7 +23,7 @@
 
 ## Debug
 ### Display error
-Display errors could be turned off in **php.ini** or Apach config file.
+Display errors could be turned off in `php.ini` or Apach config file.
 
 Turn it on in the script like this:
 ```php
