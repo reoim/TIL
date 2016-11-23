@@ -207,3 +207,20 @@ $('input[type="checkbox"]').on('change', function() {
    $('input[type="checkbox"]').not(this).prop('checked', false);
 });
 ```
+
+
+----
+
+## html(), text(), val()
+>These three things might seem like the same thing, but they're not. 
+>
+>`text()` is a textual (no HTML) representation of the inner content for all regular elements 
+>
+>`val()` are for form elements
+>
+>`html()` is the same as text, but including any markup. 
+>
+
+[Reference](http://www.jquery-tutorial.net/dom-manipulation/getting-and-setting-content/)
+
+If you want to use the string value as condition for if statement, you should use `val()`. 
