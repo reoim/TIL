@@ -224,3 +224,14 @@ $('input[type="checkbox"]').on('change', function() {
 [Reference](http://www.jquery-tutorial.net/dom-manipulation/getting-and-setting-content/)
 
 If you want to use the string value as condition for if statement, you should use `val()`. 
+
+----
+
+## get an array of text()
+```javascript
+var myArray = [];
+
+$('li').each(function(){
+    myArray.push($(this).text());
+});
+```
