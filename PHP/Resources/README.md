@@ -1,3 +1,4 @@
 ##database connection class
-[Using PDO](https://github.com/reoim/TIL/blob/master/PHP/Resources/database.php)
 [PDO Reference](https://phpdelusions.net/pdo)
+
+[Using PDO](https://github.com/reoim/TIL/blob/master/PHP/Resources/database.php)
