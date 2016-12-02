@@ -9,6 +9,7 @@ class MyComponent extends React.Component {
 
     this.state = { term: ''}; //Property 'term' can be replaced by any other word
   }
+}
 ```
 * Whenever the state is changed, it will re-render component and all children.
 
@@ -20,8 +21,32 @@ ex>
     return (
       <div>
         <input onChange={event => this.setState({ term: event.target.value})} />
-        Value of the input: {this.state.term}
       </div>
     );
   }
 ```
+However, above example does not change value of input. It only trigger event handler and change state. 
+
+To set value as state change, set declare value as state.
+```javascript
+
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { term: ''}; //Property 'term' can be replaced by any other word. default value is empty
+  }
+
+  render() {
+    return (
+      <div>
+        <input
+          value={this.state.term} //default term value is empty
+          onChange={event => this.setState({ term: event.target.value})} />
+      </div>
+    );
+  }
+}
+```
+
+In this case, whenever state change, component will be re-rendered so does value attribute. So it will have updated state as value.
