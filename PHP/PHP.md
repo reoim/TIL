@@ -144,20 +144,5 @@ if ($_POST) {
 
 ----
 
-# Object-Oriented PHP
 
-Creating a subclass
-```php
-class SubClass extends SuperClass {
-  // your code..
-}
-```
 
-Creating an instance of class
-```php
-$instance = new ClassName();
-```
-Calling an instance's method
-```php
-$instance->methodName();
-```
