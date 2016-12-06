@@ -43,4 +43,4 @@ ReactDOM.render(<App />, document.querySelector('.container'));
 
 **New Syntax** 
 
-`const App = function(){}` = `const App = () => {}`
+`const App = function(){}` is same as `const App = () => {}`
