@@ -235,9 +235,25 @@ $('li').each(function(){
     myArray.push($(this).text());
 });
 ```
+
+----
+
 ## If url matches
 ```javascript
 if(window.location.href === "http://myurl.com"){
     do something
 }
+```
+
+----
+
+## If url contains
+```javascript
+if (window.location.href.indexOf("reo") != -1)
+```
+It works, but `indexOf` does not work in Internet Exploer version 8 under.
+
+or
+```javascript
+if (/reo/.test(window.location.href))
 ```
