@@ -1,4 +1,6 @@
-# Javascript
+# JSX
+
+# ES6
 ####function
 ```javascript
 function(){}
