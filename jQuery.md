@@ -235,3 +235,9 @@ $('li').each(function(){
     myArray.push($(this).text());
 });
 ```
+## If url matches
+```
+if(window.location.href === "http://stackoverflow.com/questions/"){
+    ... then to this
+}
+```
