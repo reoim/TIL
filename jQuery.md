@@ -236,8 +236,8 @@ $('li').each(function(){
 });
 ```
 ## If url matches
-```
-if(window.location.href === "http://stackoverflow.com/questions/"){
-    ... then to this
+```javascript
+if(window.location.href === "http://myurl.com"){
+    do something
 }
 ```
