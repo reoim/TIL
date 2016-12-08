@@ -15,3 +15,40 @@ const VideoList = () => {
   )
 }
 ```
+
+### import
+If you write just a word, it will import the entire object from that file.
+
+ex> 
+```javascript
+import React from 'react';
+```
+But if you use curly braces, it will pull off just a single property.
+
+ex>
+```javascript
+import { connect } from 'react-redux';
+```
+Also you can import them together
+
+ex>
+```javascript
+import React from 'react';
+
+export default class myClass extends React.Component {
+  render(){
+    ...
+  }
+}
+
+// above code can be write like following code
+
+import React, { Component } from 'react';
+
+export default class myClass extends Component {
+  render(){
+    ...
+  }
+}
+```
+
