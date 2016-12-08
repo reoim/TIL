@@ -53,8 +53,6 @@ In this case, whenever state change, component will be re-rendered so does value
 
 
 
-----
 
-## Component state and Container state
 
-State in component and containers are completely different. 
+* **Component state is completely different from application state**
