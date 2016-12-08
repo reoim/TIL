@@ -9,6 +9,7 @@ Influenced by [Today I Learned](https://github.com/thoughtbot/til)
 [CSS](https://github.com/reoim/TIL/blob/master/CSS.md)<br>
 [C#](https://github.com/reoim/TIL/tree/master/C%23)<br>
 [EJS](https://github.com/reoim/TIL/tree/master/WebDevBootcamp/EJSexercise)<br>
+[ES6](https://github.com/reoim/TIL/tree/master/JavaScript/ES6.md)<br>
 [Express JS](https://github.com/reoim/TIL/blob/master/ExpressJS.md)<br>
 [Express/Post](https://github.com/reoim/TIL/tree/master/WebDevBootcamp/PostRequestDemo)<br>
 [Express/Movie search app](https://github.com/reoim/TIL/tree/master/WebDevBootcamp/APIs/MovieSearchApp)<br>
