@@ -50,3 +50,11 @@ class MyComponent extends React.Component {
 ```
 
 In this case, whenever state change, component will be re-rendered so does value attribute. So it will have updated state as value.
+
+
+
+----
+
+## Component state and Container state
+
+State in component and containers are completely different. 
