@@ -1,16 +1,7 @@
 # JSX
+`React` uses `JSX` which is a preprocessor step that adds XML syntax to JavaScript. 
 
-# ES6
-####function
-```javascript
-function(){}
 
-// in ES6
-
-() => {}
-```
-
-# HTML
 ### class
 `class` is already in use for class component. 
 
