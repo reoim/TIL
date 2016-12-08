@@ -35,7 +35,7 @@ ex>
 ```javascript
 import React from 'react';
 
-export default class myClass extends React.Component {
+class myClass extends React.Component {
   render(){
     ...
   }
@@ -45,7 +45,7 @@ export default class myClass extends React.Component {
 
 import React, { Component } from 'react';
 
-export default class myClass extends Component {
+class myClass extends Component {
   render(){
     ...
   }
