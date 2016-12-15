@@ -44,4 +44,6 @@ export default class App extends Component {
 
 ```
 
+# Navigating Programatically
+[react-router doc](https://github.com/reactjs/react-router-tutorial/tree/master/lessons/12-navigating)
 
