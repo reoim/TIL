@@ -52,7 +52,7 @@ public string Name {get; set;}
 ```
 
 ## Querying Objects
-1. Add DbSet in ApplicationDbContext in IdentityModels.cs file
+* Add DbSet in ApplicationDbContext in IdentityModels.cs file
 
 In this case, if the Customer class is not referenced by DbContext, it won't be included in migrations.
 ```c#
@@ -71,11 +71,11 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     }
 ```
 
-2. We need DbContext to access database. `private	ApplicationDbContext	_context;`
+* We need DbContext to access database. `private	ApplicationDbContext	_context;`
 
-3. And initialize it in the constructor. 
+* And initialize it in the constructor. 
 
-4. This DbContext is disposable object. So dispose it properly.
+* This DbContext is disposable object. So dispose it properly.
 
 ```c#
 public	class	MoviesController	
