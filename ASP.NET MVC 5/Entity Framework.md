@@ -52,11 +52,30 @@ public string Name {get; set;}
 ```
 
 ## Querying Objects
-1. We need DbContext to access database. `private	ApplicationDbContext	_context;`
+1. Add DbSet in ApplicationDbContext in IdentityModels.cs file
 
-2. And initialize it in the constructor. 
+In this case, if the Customer class is not referenced by DbContext, it won't be included in migrations.
+```c#
+public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+    {
+        public DbSet<Customer> Customers { get; set; }
+        public ApplicationDbContext()
+            : base("DefaultConnection", throwIfV1Schema: false)
+        {
+        }
 
-3. This DbContext is disposable object. So dispose it properly.
+        public static ApplicationDbContext Create()
+        {
+            return new ApplicationDbContext();
+        }
+    }
+```
+
+2. We need DbContext to access database. `private	ApplicationDbContext	_context;`
+
+3. And initialize it in the constructor. 
+
+4. This DbContext is disposable object. So dispose it properly.
 
 ```c#
 public	class	MoviesController	
