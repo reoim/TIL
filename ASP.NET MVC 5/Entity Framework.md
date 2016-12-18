@@ -148,3 +148,6 @@ using (var context = new BloggingContext())
                         .FirstOrDefault(); 
 }
 ```
+
+# Reference
+[Programming with Mosh](http://programmingwithmosh.com/)
