@@ -39,6 +39,11 @@ public ActionResult Save(Customer customer)
   else	
   {	// update data
    var customerInDb = _context.Customers.Single(c => c.Id == customer.Id);
+   
+   // update properties ..
+   // ustomerInDb.Name = customer.Name;
+   // ...
+   
   }	
   _context.SaveChanges();
   return RedirectToAction(“Index”, “Customers”)
