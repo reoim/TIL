@@ -34,15 +34,14 @@ public DateTime? Birthdate { get; set; }
 [HttpPost]
 public ActionResult Save(Customer customer)
 {
-  if	(customer.Id == 0)
+  if(customer.Id == 0)
     _context.Customers.Add(customer); // add new data
-	else	
-	{	// update data
-	  var	customerInDb = _context.Customers.Single(c.Id	== customer.Id);								
-		//update	properties
-	 }	
-		_context.SaveChanges();
-  return	RedirectToAction(“Index”,	“Customers”)
+  else	
+  {	// update data
+   var customerInDb = _context.Customers.Single(c => c.Id == customer.Id);
+  }	
+  _context.SaveChanges();
+  return RedirectToAction(“Index”, “Customers”)
 }	
 ```
 
