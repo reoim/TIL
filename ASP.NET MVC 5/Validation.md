@@ -10,18 +10,18 @@
 
 ## Adding Validation
 Decorate properties of the model with `data annotations`. Then, in the controller:
-```
+```c#
 if(!ModelStatle.IsValid)
   return View(...);
 ```
 And in the view:
-```
+```c#
 @Html.ValidationmessageFor(m => m.Name)
 ```
 
 ## Styling Validation Errors
 In site.css:
-```
+```css
 .input-validation-error {
   color: red;
 }
@@ -32,7 +32,7 @@ In site.css:
 ```
 
 ## Custom Validation
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -65,12 +65,12 @@ namespace ProductManagement.Models
 ```
 
 ## Validation Summary
-```
+```c#
 @Html.ValidationSummary(true, "Please fix the following errors");
 ```
 
 ## Client-side Validation
-```
+```c#
 @section scripts {
   @Script.Render("~/bundles/jqueryval")
 }
@@ -81,11 +81,11 @@ namespace ProductManagement.Models
 Use `Anti-forgery Tokens` to prevent `Cross-Site Request Forgery(CSRF)`.
 
 In the view:
-```
+```c#
 @Html.AntiForgeryToken()
 ```
 In the controller:
-```
+```c#
 [ValidateAntiForgeryToken]
 public ActionResult Save() {}
 ```
