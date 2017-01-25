@@ -4,6 +4,7 @@ Influenced by [Today I Learned](https://github.com/thoughtbot/til)
 
 ##List
 [AJAX](https://github.com/reoim/TIL/blob/master/AJAX.md)<br>
+[AMP](https://github.com/reoim/TIL/AMP)<br>
 [ASP.NET MVC 5](https://github.com/reoim/TIL/tree/master/ASP.NET%20MVC%205)<br>
 [Bootstrap](https://github.com/reoim/TIL/blob/master/Bootstrap.md)<br>
 [CSS](https://github.com/reoim/TIL/blob/master/CSS.md)<br>
