@@ -1,3 +1,5 @@
+# How to use Bootstrap with AMP?
+
 # CSS restrictions
 Amp has CSS restrictions. CSS cannot be lager than 50kb and must be inlined. The reason for this is that CSS blocks the critical rendering path, which means that the web browser will delay rendering content until the `CSS Object Model` is constructed.
 
