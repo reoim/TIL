@@ -34,5 +34,14 @@ The `finally` block always executes, irrespective of occurence of an Exception.
 ## When I should use the finally block
 Use when you use any resource like streams, connections, etc. We have to close them explicitly using finally block.
 
+
+## Custom Exceptions
+Exceptions can be defined by user
+
+```java
+class MyException extends Exception {
+}
+```
+
 # Reference
 [Tutorialspoint: Java](https://www.tutorialspoint.com/java/java_exceptions.htm)
