@@ -2,7 +2,7 @@
 Daily commit of What I learned today.<br>
 Influenced by [Today I Learned](https://github.com/thoughtbot/til)
 
-##List
+## List
 [AJAX](https://github.com/reoim/TIL/blob/master/AJAX.md)<br>
 [AMP](https://github.com/reoim/TIL/tree/master/AMP)<br>
 [Apache-Camel](https://github.com/reoim/TIL/tree/master/Apache-Camel)<br>
@@ -28,5 +28,6 @@ Influenced by [Today I Learned](https://github.com/thoughtbot/til)
 [Security](https://github.com/reoim/TIL/tree/master/Security)<br>
 [Spring Framework](https://github.com/reoim/TIL/blob/master/Java/SpringFramework.md)<br>
 [SQL](https://github.com/reoim/TIL/blob/master/SQL.md)<br>
+[Terminal Command](https://github.com/reoim/TIL/blob/master/terminal.md)<br>
 [Web Hosting](https://github.com/reoim/TIL/blob/master/Web%20Hosting.md)<br>
 
