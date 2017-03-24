@@ -1,6 +1,16 @@
 ## Data type in Java
 
 ## Autoboxing and unboxing
+`Autoboxing` - Java compiler automatically converts a primitive value (an int, for example) into an object of the corresponding wrapper class (Integer).
+`Unboxing` - The conversion goes the other way.
+
+Autoboxing example
+```java
+List<Integer> li = new ArrayList<>();
+for (int i = 1; i < 50; i += 2)
+    li.add(i);
+```
+
 
 ## Polymorphism
 Polymorphism is the capability of a method to do different things based on the object that it is acting upon. 
