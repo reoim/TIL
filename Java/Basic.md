@@ -2,6 +2,7 @@
 
 ## Autoboxing and unboxing
 `Autoboxing` - Java compiler automatically converts a primitive value (an int, for example) into an object of the corresponding wrapper class (Integer).
+
 `Unboxing` - The conversion goes the other way.
 
 Autoboxing example
