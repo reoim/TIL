@@ -2,6 +2,11 @@
 
 ## Autoboxing and unboxing
 
+## Polymorphism
+Polymorphism is the capability of a method to do different things based on the object that it is acting upon. 
+
+In other words, polymorphism allows you define one interface and have multiple implementations.
+
 ## Overloading and Override
 
 #### Overloading
