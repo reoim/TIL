@@ -1,5 +1,19 @@
 ## Data type in Java
 
+### Primitive Data Types
+
+| **Data Type** |  **Size**| **Range** |
+|------------|-------------|------------|
+| **boolean**   | 1 bit	 |  True or False only |   
+| **byte**     | 8 bit | -128 to 127 | 
+| **char**     | 16 bit | 0 to 65,535 | 
+| **short**    | 16 bit | -32,768 to 32,767 | 
+| **int**    | 32 bit  | -2,147,483,648 to 2,147,483,647  |   
+| **long**     | 64 bit | -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 | 
+| **float**     | 32 bit | 1.40129846432481707e-45 to 3.40282346638528860e+38 | 
+| **double**     | 64 bit | 4.94065645841246544e-324d to 1.79769313486231570e+308d | 
+
+
 ## Autoboxing and unboxing
 `Autoboxing` - Java compiler automatically converts a primitive value (an int, for example) into an object of the corresponding wrapper class (Integer).
 
