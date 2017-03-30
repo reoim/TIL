@@ -3,11 +3,14 @@
 
 **Container** - `Image`를 실행한 상태. 격리된 공간에서 프로세서가 동작하는 기술
 
+[docker store](https://store.docker.com/) - public image repository
 
 # Command
 **Version check** - `docekr version`
 
-**Check running container** - `docker ps`
+**Check running containers** - `docker ps`
+
+**Show all containers on the system** - `docker ps -a`
 
 **Run image** - `docker run imageName`
 
