@@ -6,13 +6,17 @@
 [docker store](https://store.docker.com/) - public image repository
 
 # Command
-**Version check** - `docekr version`
+`docker help` - Show docker command usage information
 
-**Check running containers** - `docker ps`
+`docekr version` - Version check
 
-**Show all containers on the system** - `docker ps -a`
+`docker ps` - Check running containers
 
-**Run image** - `docker run imageName`
+`docker ps -a` - Show all containers on the system
+
+`docker run imageName` - Run image
+
+`docker images` - Lists all the images on your local system
 
 # References
 [초보를 위한 도커 안내서 by subicura](https://subicura.com/2017/01/19/docker-guide-for-beginners-1.html)
