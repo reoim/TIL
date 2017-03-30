@@ -3,5 +3,13 @@
 
 **Container** - `Image`를 실행한 상태. 격리된 공간에서 프로세서가 동작하는 기술
 
+
+# Command
+**Version check** - `docekr version`
+
+**Check running container** - `docker ps`
+
+**Run image** - `docker run imageName`
+
 # References
 [초보를 위한 도커 안내서 by subicura](https://subicura.com/2017/01/19/docker-guide-for-beginners-1.html)
