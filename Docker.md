@@ -14,6 +14,10 @@
 
 `docker ps -a` - Show all containers on the system
 
+`docker ps -aq` - Show all containers with numeric IDs only
+
+`docker rm -f $(docker ps -aq)` - Clean up all containers
+
 `docker run imageName` - Run image
 
 `docker images` - Lists all the images on your local system
