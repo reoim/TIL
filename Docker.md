@@ -27,6 +27,14 @@ List - `docker ps -a -f status=exited`
 
 Remove - `docker rm $(docker ps -a -f status=exited -q)`
 
+### Change tag
+`docker tag [imageid] [imagename:tag]`
+
+ex>
+```
+$ docker tag 7d9495d03763 maryatdocker/docker-whale:latest
+```
+
 # References
 [Docker Doc](https://docs.docker.com/)
 
