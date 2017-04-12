@@ -35,6 +35,11 @@ ex>
 $ docker tag 7d9495d03763 maryatdocker/docker-whale:latest
 ```
 
+### Get into docker container
+```
+docker exec -it <mycontainer> bash
+```
+
 # References
 [Docker Doc](https://docs.docker.com/)
 
