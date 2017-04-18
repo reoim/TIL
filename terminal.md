@@ -1,6 +1,5 @@
 # Terminal command
 
-
 ## rm command
 
 `rm -r directory` - delete a directory and all its contents
@@ -11,6 +10,12 @@
 
 `rm -f` - forcibly delete files without asking
 
+
+## list opened network port
+`netstat -atp tcp | grep -i "listen"`
+
+`lsof -Pn -i4`
+`-i4` means only show ipv4 addresses and ports
 
 
 # Unix command reference - [Link](http://www.statslab.cam.ac.uk/~eva/unixref.html)
