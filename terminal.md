@@ -15,6 +15,7 @@
 `netstat -atp tcp | grep -i "listen"`
 
 `lsof -Pn -i4`
+
 `-i4` means only show ipv4 addresses and ports
 
 
