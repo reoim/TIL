@@ -46,3 +46,8 @@ function `intSeq` returns another `anonymous function`. Inner scope of the anony
 Call `intSeq` and assign to nextInt. This function value captures its own `i` value, which will be updated each time we call `nextInt`.
 
 If we assign new `intSeq`, the `i` value will be reset.
+
+Long story, short.
+
+Influence of the inner scope persist value of the outter scope = `closure`
+
