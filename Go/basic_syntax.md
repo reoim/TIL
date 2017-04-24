@@ -68,3 +68,14 @@ type Shape interface {
   area() float64
 }
 ```
+
+
+## Concurrency and Parallelism
+
+> In programming, concurrency is the composition of independently executing processes, while parallelism is the simultaneous execution of (possibly related) computations. 
+
+> Concurrency is about dealing with lots of things at once. Parallelism is about doing lots of things at once.
+
+
+## Reference
+[golang blog](golang.org)
