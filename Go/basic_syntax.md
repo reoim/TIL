@@ -54,4 +54,17 @@ Influence of the inner scope persist value of the outter scope = `closure`
 
 ## Struct and Interface
 * Struct - define fields
+
+```go
+type Rect struct {
+	width, height int
+}
+```
+
 * Interface - define `method set`. `Method set` is a list of methods that a type must have in order to implement the interface
+
+```go
+type Shape interface {
+  area() float64
+}
+```
