@@ -144,5 +144,68 @@ t2.start();
 }  
 ```
 
+## Synchronized block
+Instead of using synchronized method, we can perform synchronization on certain block in the method.
+
+Suppose you got 30 lines of code in your method and you want to synchronize only 10 lines. You can use syncrhonized block.
+
+**Syntax**
+```java
+synchronized (object reference expression) {   
+  //code block   
+} 
+```
+
+**Example**
+```java
+class Table{  
+  
+void printTable(int n){  
+   synchronized(this){//synchronized block  
+     for(int i=1;i<=5;i++){  
+      System.out.println(n*i);  
+      try{  
+       Thread.sleep(400);  
+      }catch(Exception e){System.out.println(e);}  
+     }  
+   }  
+}//end of the method  
+}  
+  
+public class TestSynchronizedBlock2{  
+public static void main(String args[]){  
+final Table obj = new Table();//only one object  
+  
+Thread t1=new Thread(){  
+public void run(){  
+obj.printTable(5);  
+}  
+};  
+Thread t2=new Thread(){  
+public void run(){  
+obj.printTable(100);  
+}  
+};  
+  
+t1.start();  
+t2.start();  
+}  
+}  
+```
+
+```
+Output:5
+       10
+       15
+       20
+       25
+       100
+       200
+       300
+       400
+       500
+```
+
+
 # Reference
 [Java T Point - Synchronization in java](https://www.javatpoint.com/synchronization-in-java)
