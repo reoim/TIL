@@ -109,12 +109,17 @@ class Ford extends CarClass
 ```
 
 ## String, StringBuffer and String Builder
+
+Java `String` is `immutable`. It cannot be changed. Meaning whenever we changed any string, a new instance is created. 
+For `mutable` string, we use `StringBuffer` and `StringBuilder` class.
+
 |            | **String** |  **StringBuffer**| **StringBuilder** |
 |------------|-------------|------------|------------|
 | **Storage Area**   | Constant String Pool |  Heap |    Heap 
 | **Modifiable**     | No (immutable) | Yes( mutable ) | Yes( mutable )
 | **Thread Safe**    | Yes      | Yes | No  
 | **Performance**    | Fast      | Very slow   | Fast   
+
 
 
 
