@@ -1,4 +1,14 @@
+## JRE, Java Runtime Environment
+`ava virtual machine` and `standard Java APIs` coming with `Java Standard Edition(Java SE)`.
 
+The `JRE` contains enough to execute a Java application, but not to compile it.
+
+## Java Software Development Kit, Java SDK
+The Java Software Development Kit (Java SDK) is the JRE plus the Java compiler, and a set of other tools.
+
+If you need to develop Java programs you need the full Java SDK. The JRE is not enough then. Only the full Java SDK contains the Java compiler which turns your .java source files into byte code .class files.
+
+Additionally, some Java servers may need some of the tools in the JDK to e.g. compile JSPs (Java Server Pages) into Java byte code. In that case it is not enough to run the server with the JRE. You must use the full Java SDK so the server has the extra tools from the Java SDK available.
 
 ## Data type in Java
 
