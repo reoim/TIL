@@ -206,6 +206,57 @@ Output:5
        500
 ```
 
+# Static synchronization
+
+![static-sync](images/static-synch.png)
+
+Suppose there are two objects(object1, object2) of a shared class.
+In case of synchronized method and block, t1 and t2 cannot interfere each other. Same for t3 and t4. Because t1 and t2 both refer to a common object that has a single lock.
+However, There can be interference between t1 and t3 or t2 and t4 because t1 acquires another lock and t3 acquires anotehr lock.
+
+Here comes the `static synchronization`.
+
+If you make any static method as synchronized, the lock will be on the `class` not on `object`.
+
+## synchronized block on a class lock
+
+```java
+static void printTable(int n) {  
+    synchronized (Table.class) {       // Synchronized block on class A  
+        // ...  
+    }  
+}  
+```
+
+# Deadlock
+
+![deadlock](images/deadlock.png)
+
+A thread(thread1) is waiting for an object lock, that is acquried by another thread(trhead2). And thread 2 is waiting for an object lock that is acquried by thread 2. Both threads are waiting for each other to release the lock. This is called `deadlock`.
+
+# Inter-thread communication
+
+* wait() - make current thread to release the lock and wait until another thread invokes notify() or notifyAll() method.
+
+* notify() - wakes up a single thread which is in wait set. The thread is randomly picked.
+
+* notifyAll() - wakes up all thread in wait set.
+
+
+Inter-thread communication model - [Diagram from javatpoint](https://www.javatpoint.com/inter-thread-communication-example)
+![inter-thread](images/inter-thread.png)
+
+* wait(), notify() and notifyAll() methods are defined in Object class not Thread class. Because they are related to loack and object has a lock.
+
+* sleep() method is defined in Thread class and it doesn't release the lock.
+
+* wait() method is defined in Object class and it does release the lock.
+
+# Interrupting a thread
+
+* If call interrupt() to any thread which is in sleeping or wait state, it will throw InterruptedException. 
+
+* If thread are not in sleeping or waiting state, calling interrupt() doesn't interrupt the thread but sets the interrupt flag to true.
 
 # Reference
 [Java T Point - Synchronization in java](https://www.javatpoint.com/synchronization-in-java)
