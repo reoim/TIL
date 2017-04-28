@@ -200,6 +200,16 @@ It inherits HashMap class. Only a difference between HashMap and LinkedHashMap i
 | HashMap is traversed by Iterator | HashTable is traversed by Enumerator and Iterator |
 | Inherits AbstractMap class | Inherits Dictionary class |
 
+## ArrayList vs Vector
+ArrayList and Vector both implements List interfac and maintains insertion order.
+
+| **ArrayList** | **Vector** |
+|------------|-------------|
+| Not synchronized     | synchronized   | 
+| increments 50% of current array size if it exceeds than its capacity   | Double the array size when it exceeds its capacity   | 
+| Fast          | Slow      |  
+| traversed by Iterator | Traversed by Enumerator and Iterator |
+
 
 # Reference
 [Java T Point - Collection Framework](http://www.javatpoint.com/collections-in-java)
