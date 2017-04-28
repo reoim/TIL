@@ -96,7 +96,7 @@ public static void main(String[] args) {
 ## Queue
 Java Queue interface orders the element in ~PPAP(Pen Pineapple Apple Pen)~ FIFO(First In First Out) manner. In FIFO, first element is removed first and last element is removed at last.
 
-## PriorityQueue
+### PriorityQueue
 * The PriorityQueue class provides the facility of using queue. But it does not orders the elements in FIFO manner. It inherits AbstractQueue class.
 * Let's see a PriorityQueue example where we are adding books to queue and printing all the books. The elements in PriorityQueue must be of Comparable type. String and Wrapper classes are Comparable by default. To add user-defined objects in PriorityQueue, you need to implement Comparable interface.
 
@@ -160,6 +160,45 @@ After removing one book record:
 233 Operating System Galvin Wiley 6
 ```
 
+## Deque
+Supports element insertion and removal at both ends. Deque means "Double Ended queue".
+
+### ArrayDeque
+* Can add or remove elements from both ends.
+* Null elements are not allowed
+* Not thread safe, in the absence of external synchronization
+* Has no capacity restrictions
+* Faster than LinkedList and Stack
+
+
+## HashMap
+* Contains key, value
+* Only store unique elements
+* It may have one null key and multiple null values
+* Maintains no order
+
+## LinkedHashMap
+It inherits HashMap class. Only a difference between HashMap and LinkedHashMap is that LinkedHashMap maintains insertion order.
+
+## TreeMap
+* It is same as HashMap instead maintains ascending order and cannot have any null key
+
+## HashTable
+* HashTable is an array of list. Each list is known as a bucket. The postion of bucket is identified by calling the hashcode() method. A Hashtable contains values based on the key
+* It contains only unique elements
+* It may have not have any null key or value
+* It is synchronized
+
+## HashMap vs HashTable
+| **HashMap** | **HashTable** |
+|------------|-------------|
+| HashMap is non synchronized. It is not-thread safe and can't be shared between many threads without proper synchronization code      | Hashtable is synchronized. It is thread-safe and can be shared with many threads       | 
+| Allows one null key and multiple null values     | Doesn't allow any null key or value       | 
+| Fast          | Slow      |  
+| can make the HashMap as synchronized by calling this code
+`Map m = Collections.synchronizedMap(hashMap);`| Hashtable is internally synchronized and can't be unsynchronized       | 
+| HashMap is traversed by Iterator | HashTable is traversed by Enumerator and Iterator |
+| Inherits AbstractMap class | Inherits Dictionary class |
 
 
 # Reference
