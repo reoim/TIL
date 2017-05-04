@@ -36,7 +36,7 @@ Node.js
 [PHP](https://github.com/reoim/TIL/tree/master/PHP)<br>
 [Protocol buffer](https://github.com/reoim/TIL/blob/master/protocol-buffer.md)<br>
 [Restful](https://github.com/reoim/TIL/blob/master/RESTful.md)<br>
-[Spring Framework](https://github.com/reoim/TIL/blob/master/Java/SpringFramework.md)<br>
+[Spring Framework](https://github.com/reoim/TIL/tree/master/Java/Spring)<br>
 [Web Hosting](https://github.com/reoim/TIL/blob/master/Web%20Hosting.md)<br>
 
 ## Database
