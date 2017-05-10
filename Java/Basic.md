@@ -1,5 +1,5 @@
 ## JRE, Java Runtime Environment
-`ava virtual machine` and `standard Java APIs` coming with `Java Standard Edition(Java SE)`.
+`Java virtual machine` and `standard Java APIs` coming with `Java Standard Edition(Java SE)`.
 
 The `JRE` contains enough to execute a Java application, but not to compile it.
 
