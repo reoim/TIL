@@ -40,6 +40,11 @@ $ docker tag 7d9495d03763 maryatdocker/docker-whale:latest
 docker exec -it <mycontainer> bash
 ```
 
+### list all dangling volume
+```
+docker volume ls -f dangling=true
+```
+
 # References
 [Docker Doc](https://docs.docker.com/)
 
