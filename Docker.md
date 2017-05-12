@@ -50,6 +50,11 @@ docker volume ls -f dangling=true
 docker volume prune
 ```
 
+### Important tip on using shared volumes
+> Multiple containers can share one or more data volumes. However, multiple container writing to a single shared data volume can cause data corruption. Make sure your application is desinged to write to shared data stores.
+>
+> Data volumes are directly accessble from the Docker host. This means you can read and write to them with normal linux tools. In most cases, you should not do this as it can cause data corruption if your containers or applications are unaware of your direct access.
+
 # References
 [Docker Doc](https://docs.docker.com/)
 
