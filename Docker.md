@@ -45,6 +45,11 @@ docker exec -it <mycontainer> bash
 docker volume ls -f dangling=true
 ```
 
+### To remove all unused volume and free up space
+```
+docker volume prune
+```
+
 # References
 [Docker Doc](https://docs.docker.com/)
 
