@@ -33,5 +33,56 @@ XML 문서를 통해 데이터에 접근하고 수정하는 것을 말함
 * XML 문서에 랜덤하게 접근 불가능. forward only.
 * Parser가 접근하거나 수정한 데이터를 트랙킹 하려면 따로 데이터를 저장하는 코드를 직접 만들어줘야함
 
+### StAX API
+`StAX API`는 크게 두가지 API set 으로 나뉜다.
 
+* **Cursor API** - XML 문서를 처음부터 시작해서 끝까지 살펴 볼 수 있는 `Cursor` 를 사용. 이 Cursor는 foward만 가능하고 backward 이동은 불가능함. 보통 한번에 한 element씩 처리함.
 
+Cursor의 main interface 로는
+
+`XMLStreamReader` 와 `XMLStreamWriter` 가 있음.
+
+XMLStreamReader
+```java
+public interface XMLStreamReader {
+    public int next() throws XMLStreamException;
+    public boolean hasNext() throws XMLStreamException;
+
+    public String getText();
+    public String getLocalName();
+    public String getNamespaceURI();
+    // ... other methods not shown
+}
+```
+
+XMLStreamWriter
+```java
+public interface XMLStreamWriter {
+    public void writeStartElement(String localName) throws XMLStreamException;
+    public void writeEndElement() throws XMLStreamException;
+    public void writeCharacters(String text) throws XMLStreamException;
+    // ... other methods not shown
+}
+```
+* **Iterator API** - Event objects set의 형태로 XML document stream 을 나타냄. 
+
+XMLEventReader
+```java
+public interface XMLEventReader extends Iterator {
+    public XMLEvent nextEvent() throws XMLStreamException;
+    public boolean hasNext();
+    public XMLEvent peek() throws XMLStreamException;
+    // ...
+}
+```
+
+XMLEventWriter
+```java
+public interface XMLEventWriter {
+    public void flush() throws XMLStreamException;
+    public void close() throws XMLStreamException;
+    public void add(XMLEvent e) throws XMLStreamException;
+    public void add(Attribute attribute) throws XMLStreamException;
+    // ...
+}
+```
