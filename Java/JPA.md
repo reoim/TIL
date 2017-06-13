@@ -22,3 +22,7 @@ Eqauls 메소드를 구현했다면 Hashcode 메소드도 함께 구현 하여�
 ![hash3](images/hash3.png)
 
 ![hash4](images/hash4.png)
+
+
+# Reference 
+[Udemy: Hibernate and JPA fundamentals](https://www.udemy.com/hibernate-and-jpa-fundamentals)
