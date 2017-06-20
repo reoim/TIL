@@ -62,7 +62,7 @@ class Testimmutablestring{
 Output:Sachin
 ```
 
-![immutable-string](immutable-string.png)
+![immutable-string](images/immutable-string.png)
 
 
 What if we want to assign it to the reference variable?
