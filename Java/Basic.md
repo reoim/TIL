@@ -123,7 +123,7 @@ For `mutable` string, we use `StringBuffer` and `StringBuilder` class.
 
 ## Why Switch Case is faster than if/else statement
 
-When the JVM encounters a tableswitch instruction, it can simply check to see if the key is within the range defined by low and high. If not, it takes the default branch offset. If so, it just subtracts low from key to get an offset into the list of branch offsets. In this manner, it can determine the appropriate branch offset without having to check each case value
+When the JVM encounters a tableswitch instruction, it can simply check to see if the key is within the range defined by low and high. If not, it takes the default branch offset. If so, it just subtracts low from key to get an offset into the list of branch offsets. In this manner, it can determine the appropriate branch offset without having to check each case value.
 
 
 # References
