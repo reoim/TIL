@@ -125,6 +125,7 @@ For `mutable` string, we use `StringBuffer` and `StringBuilder` class.
 
 When the JVM encounters a tableswitch instruction, it can simply check to see if the key is within the range defined by low and high. If not, it takes the default branch offset. If so, it just subtracts low from key to get an offset into the list of branch offsets. In this manner, it can determine the appropriate branch offset without having to check each case value.
 
+Note: When compare String with Switch case, it works as if use String.equals method. So it compare String value and it is case sensitive. 
 
 # References
 [Overloading/Override](http://beginnersbook.com/2014/01/difference-between-method-overloading-and-overriding-in-java/)
