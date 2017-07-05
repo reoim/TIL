@@ -31,3 +31,6 @@ Both `JobExcution` and `StepExcution` level `ExcutionContext` can be accessed in
 </bean>
 ```
 
+
+# Reference
+[Spring batch documentation - 5. Configuring a Step](http://docs.spring.io/spring-batch/reference/html/configureStep.html)
