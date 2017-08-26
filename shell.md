@@ -7,7 +7,7 @@ for s in ./bmt-sdk*/app.js
 # do something to the source files from for loop results
 do
 # findtext -> changetext.  in linux, use -i option. in mac, use -it option.
-  sed -it 's/findtext/changetext/g' $s
+  sed -i 's/findtext/changetext/g' $s
 done
 ```
 
