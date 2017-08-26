@@ -11,4 +11,16 @@ do
 done
 ```
 
+# Copy and paste multiple directories and change text in certain file of each directory
+ex> create folder bmt-sdk1 ~ bmt-sdk60 and change port in each app.js file
+```shell
+#!/bin/bash
+
+for i in {1..60}
+do
+        yes | cp -rf /app/bmt-sdk1 /app/bmt-sdk${i}
+
+        sed -i "s/localhost:61001/localhost:610$((i+1))/" /app/bmt-sdk${i}/app.js
+done
+```
 
