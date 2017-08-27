@@ -1,5 +1,16 @@
 # Terminal command
 
+## Symbolic link
+Create symbolic link at the command-line interface
+```shell
+ln -s target_path link_path
+```
+
+Remove symbolic link
+```shell
+rm link_path
+```
+
 ## rm command
 
 `rm -r directory` - delete a directory and all its contents
