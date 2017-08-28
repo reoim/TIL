@@ -1,5 +1,9 @@
 # Terminal command
 
+## append file to file
+```shell
+cat file2 >> file1
+```
 ## Symbolic link
 Create symbolic link at the command-line interface
 ```shell
