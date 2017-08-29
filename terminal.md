@@ -33,6 +33,10 @@ rm link_path
 
 `-i4` means only show ipv4 addresses and ports
 
+List port that use tcp 5000
+```shell 
+lsof -i TCP:5000
+```
 
 # Unix command reference - [Link](http://www.statslab.cam.ac.uk/~eva/unixref.html)
 
