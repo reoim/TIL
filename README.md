@@ -16,6 +16,8 @@ Node.js
 >[Express/Post](https://github.com/reoim/TIL/tree/master/WebDevBootcamp/PostRequestDemo)<br>
 >[Express/Movie search app](https://github.com/reoim/TIL/tree/master/WebDevBootcamp/APIs/MovieSearchApp)<br>
 
+## Algorithm & Data structure
+[Algorithms](https://github.com/reoim/TIL/blob/master/Algorithm)
 
 ## Front-end
 [AMP](https://github.com/reoim/TIL/tree/master/AMP)<br>
