@@ -46,3 +46,17 @@ Both return:
 ```
 [2,4,6,8]
 ```
+
+
+## Slice notation
+
+```python
+a[start:end] # items start through end-1
+a[start:]    # items start through the rest of the array
+a[:end]      # items from the beginning through end-1
+a[:]         # a copy of the whole array
+a[start:end:step] # start through not past end, by step
+a[-1]    # last item in the array
+a[-2:]   # last two items in the array
+a[:-2]   # everything except the last two items
+```
