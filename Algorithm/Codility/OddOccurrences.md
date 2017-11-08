@@ -1,5 +1,5 @@
 ## Odd Occurrences in Array
-[Question](https://codesays.com/2014/solution-to-perm-check-by-codility/)
+[Question](https://codility.com/programmers/lessons/2-arrays/odd_occurrences_in_array/)
 
 
 
