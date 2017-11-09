@@ -1,5 +1,5 @@
 ## MaxCounters
-[Question]()
+[Question](https://codility.com/programmers/lessons/4-counting_elements/max_counters/)
 
 ## Solution
 Java
