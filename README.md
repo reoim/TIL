@@ -17,7 +17,7 @@ Node.js
 >[Express/Movie search app](https://github.com/reoim/TIL/tree/master/WebDevBootcamp/APIs/MovieSearchApp)<br>
 
 ## Algorithm & Data structure
-[Algorithms](https://github.com/reoim/TIL/blob.master/Algorithm)<br>
+[Algorithms](https://github.com/reoim/TIL/tree/master/Algorithm)<br>
 
 ## Front-end
 [AMP](https://github.com/reoim/TIL/tree/master/AMP)<br>
