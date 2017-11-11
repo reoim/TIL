@@ -32,6 +32,7 @@ project/urls.py
 ```python
 from django.conf.urls import url
 from django.contrib import admin
+from django.conf.urls import include
 
 urlpatterns = [
     url(r'^first_app/', include('first_app.urls')),
