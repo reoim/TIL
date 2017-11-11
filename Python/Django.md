@@ -27,6 +27,28 @@ TEMPLATES = [
     },
 ]
 ```
+## How to set up url for app
+project/urls.py
+```python
+from django.conf.urls import url
+from django.contrib import admin
+
+urlpatterns = [
+    url(r'^first_app/', include('first_app.urls')),
+    url(r'^admin/', admin.site.urls),
+]
+```
+
+app/urls.py
+```python
+from django.conf.urls import url
+from first_app import views
+
+urlpatterns = [
+    url(r'^$', views.index, name='index'),
+]
+```
+
 
 ## How to render
 index.html
