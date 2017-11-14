@@ -18,6 +18,7 @@ Node.js
 
 ## Algorithm & Data structure
 [Algorithms](https://github.com/reoim/TIL/tree/master/Algorithm)<br>
+[Data Structure](https://github.com/reoim/TIL/tree/master/DataStructure)<br>
 
 ## Front-end
 [AMP](https://github.com/reoim/TIL/tree/master/AMP)<br>
