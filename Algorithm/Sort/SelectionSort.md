@@ -3,6 +3,7 @@
 * Performance: O(n^2)
 * Space complexity: O(n) total, O(1) auxiliary
 
+Python
 ```python
 
 def selection_sort(alist):
