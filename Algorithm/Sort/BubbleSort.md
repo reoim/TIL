@@ -1,4 +1,7 @@
+# Bubble Sort
 
+* Performance: O(n^2)
+* Space complexity: O(1)
 ```python
   def bubble_sort(alist):
     for i in range(len(alist)-1):
