@@ -1,6 +1,7 @@
 ## Merge Sort
 
 Performance: O(NLogN)
+
 Space complexity: O(N)
 
 Java
