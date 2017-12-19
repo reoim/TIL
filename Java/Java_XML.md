@@ -86,3 +86,44 @@ public interface XMLEventWriter {
     // ...
 }
 ```
+
+
+
+### Format XML String in JAVA
+```java
+public String formatXML(String input)
+    {
+        try
+        {
+            Transformer transformer = TransformerFactory.newInstance()
+                    .newTransformer();
+            transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+            transformer.setOutputProperty(
+                    "{http://xml.apache.org/xslt}indent-amount", "3");
+
+            StreamResult result = new StreamResult(new StringWriter());
+            DOMSource source = new DOMSource(parseXml(input));
+            transformer.transform(source, result);
+            return result.getWriter().toString();
+        } catch (Exception e)
+        {
+            e.printStackTrace();
+            return input;
+        }
+    }
+
+    private Document parseXml(String in)
+    {
+        try
+        {
+            DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+            DocumentBuilder db = dbf.newDocumentBuilder();
+            InputSource is = new InputSource(new StringReader(in));
+            return db.parse(is);
+        } catch (Exception e)
+        {
+            throw new RuntimeException(e);
+        }
+    }
+```
+[Reference](http://kveeresham.blogspot.kr/2015/03/format-xml-using-java.html)
